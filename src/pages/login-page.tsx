@@ -1,10 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import api from '../api'
 import LoginForm from '../components/LoginForm'
-import Navbar from '../components/layout/Navbar'
-import { useSession } from '../context/SessionContext'
-import PageLayout from '../PageLayout'
 
 type Props = {}
 

@@ -1,11 +1,8 @@
-import React, { useEffect, useState } from 'react'
-import { Link, useLoaderData, useNavigate, useParams } from 'react-router-dom'
-import api from '../api'
+import React from 'react'
+import { useLoaderData } from 'react-router-dom'
 import { Spinner } from '../assets/Spinner'
 import GoBackButton from '../components/ui/GoBackButton'
 import ProductDetails from '../components/ui/ProductDetails'
-import { useSession } from '../context/SessionContext'
-import PageLayout from '../PageLayout'
 import { Product } from '../types'
 
 type Props = {}

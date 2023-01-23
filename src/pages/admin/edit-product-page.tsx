@@ -1,9 +1,7 @@
-import { type } from 'os'
 import React from 'react'
 import { useLoaderData, useParams } from 'react-router-dom'
 import GoBackButton from '../../components/ui/GoBackButton'
 import ProductForm from '../../components/ProductForm'
-import PageLayout from '../../PageLayout'
 import { Product } from '../../types'
 
 type Props = {}

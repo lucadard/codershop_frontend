@@ -1,7 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import SignupForm from '../components/SignupForm'
-import PageLayout from '../PageLayout'
 
 type Props = {}
 

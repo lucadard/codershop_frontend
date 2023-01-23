@@ -1,8 +1,6 @@
 import React from 'react'
 import { baseUrl } from '../api'
-import GoBackButton from '../components/ui/GoBackButton'
 import { useSession } from '../context/SessionContext'
-import PageLayout from '../PageLayout'
 
 type Props = {}
 

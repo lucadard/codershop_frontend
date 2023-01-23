@@ -1,6 +1,4 @@
-import React, { useEffect, useState } from 'react'
-import api from '../api'
-import { Spinner } from '../assets/Spinner'
+import React from 'react'
 import { Product } from '../types'
 import ProductCard from './ui/ProductCard'
 

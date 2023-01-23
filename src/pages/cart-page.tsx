@@ -1,12 +1,11 @@
 import React, { useState } from 'react'
-import { Link, redirect, useNavigate } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 import api, { baseUrl } from '../api'
 import { Spinner } from '../assets/Spinner'
 import Button from '../components/ui/Button'
 import GoBackButton from '../components/ui/GoBackButton'
 import Modal from '../components/layout/Modal'
 import { useSession } from '../context/SessionContext'
-import PageLayout from '../PageLayout'
 
 type Props = {}
 

@@ -1,8 +1,7 @@
-import { stringify } from 'querystring'
-import React, { Dispatch, SetStateAction, useEffect, useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import api from '../api'
 import useLocalStorage from '../hooks/useLocalStorage'
-import { Cart, Order, Product, UserData } from '../types'
+import { Cart, Order, UserData } from '../types'
 
 type SessionContextProps = {
   children: React.ReactNode

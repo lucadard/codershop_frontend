@@ -1,7 +1,6 @@
 import React from 'react'
 import GoBackButton from '../../components/ui/GoBackButton'
 import ProductForm from '../../components/ProductForm'
-import PageLayout from '../../PageLayout'
 
 type Props = {}
 
