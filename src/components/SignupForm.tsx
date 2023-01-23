@@ -31,9 +31,7 @@ const SignupForm = () => {
       password: passwordInput.value,
       name: nameInput.value,
       lastname: lastnameInput.value,
-      image:
-        uploadedImageUrl ??
-        `https://api.dicebear.com/5.x/initials/jpg?seed=${nameInput.value}`
+      image: uploadedImageUrl
     }
 
     setIsLoading(true)
