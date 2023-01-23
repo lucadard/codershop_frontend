@@ -79,7 +79,7 @@ const router = createBrowserRouter([
             )
           },
           {
-            path: 'admin/add-product',
+            path: 'add-product',
             element: (
               <ProtectedRoute element={<ProductAddPage />} admin={true} />
             )
