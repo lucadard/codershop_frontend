@@ -1,6 +1,10 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import { createBrowserRouter, Outlet, RouterProvider } from 'react-router-dom'
+import {
+  createBrowserRouter,
+  Outlet,
+  RouterProvider
+} from 'react-router-dom'
 import './index.css'
 
 import { SessionProvider } from './context/SessionContext'
@@ -11,7 +15,7 @@ import ProfilePage from './pages/profile-page'
 import CartPage from './pages/cart-page'
 import OrdersPage from './pages/orders-page'
 
-import ErrorPage from './pages/error-page'
+import ErrorPage from './pages/error/error'
 
 import LoginPage from './pages/login-page'
 import SignupPage from './pages/signup-page'
@@ -22,16 +26,17 @@ import ProductAddPage from './pages/admin/add-product-page'
 import api from './api'
 import PageLayout from './PageLayout'
 import ProtectedRoute from './components/ProtectedRoute'
+import NotFoundPage from './pages/error/not-found'
 
 const router = createBrowserRouter([
   {
     path: '/',
-    errorElement: <ErrorPage />,
     element: (
       <PageLayout>
         <Outlet />
       </PageLayout>
     ),
+    errorElement: <ErrorPage />,
     children: [
       {
         path: '',
@@ -74,22 +79,26 @@ const router = createBrowserRouter([
             )
           },
           {
-            path: '/admin/add-product',
+            path: 'admin/add-product',
             element: (
               <ProtectedRoute element={<ProductAddPage />} admin={true} />
             )
           }
         ]
-      },
-      {
-        path: '/login',
-        element: <LoginPage />
-      },
-      {
-        path: '/signup',
-        element: <SignupPage />
       }
     ]
+  },
+  {
+    path: 'login',
+    element: <LoginPage />
+  },
+  {
+    path: 'signup',
+    element: <SignupPage />
+  },
+  {
+    path: '*',
+    element: <NotFoundPage />
   }
 ])
 

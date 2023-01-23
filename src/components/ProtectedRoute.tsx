@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 import { Navigate } from 'react-router-dom'
 import { Spinner } from '../assets/Spinner'
 import { useSession } from '../context/SessionContext'
-import ErrorPage from '../pages/error-page'
+import ErrorPage from '../pages/error/error'
 
 type Props = {
   element: React.ReactNode
