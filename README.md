@@ -1,7 +1,7 @@
 This proyect was only built to showcase [this](https://github.com/lucadard/ecommerce-coderhouse_server) backend service. You can test it [here](https://ecommerce-coderhouse-frontend.vercel.app/).
 
 ## Tools I used:
-Created with [vite](), some of the tools I used to develop this page are:
+Created with [vite](https://vitejs.dev/), some of the tools I used to develop this page are:
 - TypeScript
 - Tailwind CSS
 - React Router 6
