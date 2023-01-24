@@ -8,10 +8,10 @@ type Props = {}
 
 const Footer = (props: Props) => {
   return (
-    <section className="border-t-2 px-48 py-10 h-auto flex flex-col md:flex-row gap-4 justify-between items-center w-full select-none">
+    <section className="border-t-2 px-20 lg:px-48 py-10 flex flex-col md:flex-row gap-4 justify-between items-center w-full select-none">
       <div className="flex gap-2 items-center h-7">
         <a
-          href="https://github.com/lucadard/repository-name"
+          href="https://github.com/lucadard/ecommerce-coderhouse_frontend"
           className="w-7 aspect-square relative"
           target="_blank"
         >
