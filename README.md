@@ -8,3 +8,5 @@ Created with [vite](https://vitejs.dev/), some of the tools I used to develop th
 
 Along custom methods to communicate with my API making use of `async/await` and `React Context` and `Local Storage` to manage sessions.
 
+### Note:
+This is HEAVILY inspired in the web [Deno Merch](https://merch.deno.com/) (not to say it's a rip off) because I liked it too much.
